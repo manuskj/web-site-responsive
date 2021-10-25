@@ -443,21 +443,5 @@ p {
     font-size: 7rem;
   }
   /* End Hero */
-
-  /* Services Section */
-  #services .service-bottom .service-item {
-    flex-basis: 45%;
-    margin: 2.5%;
-  }
-  /* End Services Section */
-
-  /* Project */
-  #projects .project-item {
-    flex-direction: row;
-  }
-  #projects .projects-item:nth-child(even) {
-    flex-direction: row-reverse;
-  }
-  /* End Project */
 }
 /* Media Query For Tablet */
