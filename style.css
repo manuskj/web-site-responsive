@@ -141,17 +141,9 @@ p {
   margin: 0 auto;
   padding: 100px 0;
 }
-#services .section-title {
-  font-size: 4rem;
-  font-weight: 300;
-  color: black;
-  margin-bottom: 10px;
-  text-transform: uppercase;
-  letter-spacing: 0.2rem;
-  text-align: center;
-}
-#services .section-title span {
-  color: crimson;
+#service .service-top {
+  max-width: 500px;
+  margin: 0 auto;
 }
 #services .service-bottom {
   display: flex;
@@ -401,6 +393,9 @@ p {
 #footer .social-item:hover img {
   filter: grayscale(0);
 }
+#footer .footer p {
+  color: white;
+}
 
 /* End Footer */
 
@@ -455,9 +450,79 @@ p {
   #projects .project-item {
     flex-direction: row;
   }
-  #projects .projects-item:nth-child(even) {
+  #projects .project-item:nth-child(even) {
     flex-direction: row-reverse;
   }
+  #projects .project-item {
+    height: 400px;
+    margin: 0;
+    width: 100%;
+    border-radius: 0;
+  }
+  #projects .all-projects .project-info {
+    height: 100%;
+  }
+  #projects .all-projects .project-img {
+    height: 100%;
+  }
   /* End Project */
+
+  /* About */
+  #about .about {
+    flex-direction: row;
+  }
+  #about .col-left {
+    width: 600px;
+    height: 400px;
+    padding-left: 60px;
+  }
+  #about .about .col-left .about-img::after {
+    left: -45px;
+    top: 34px;
+    height: 98%;
+    width: 98%;
+    border: 10px solid crimson;
+  }
+  #about .col-right {
+    text-align: left;
+    padding: 30px;
+  }
+  #about .col-right h1 {
+    text-align: left;
+  }
+  /* End About */
+
+  /* Contact */
+  #contact .contact {
+    flex-direction: column;
+    padding: 100px 0;
+    align-items: center;
+    justify-content: center;
+    min-height: 20vh;
+  }
+  #contact .contact-items {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    margin: 0;
+  }
+  #contact .contact-item {
+    margin: 20px;
+    flex-direction: row;
+  }
+  #contact .contact-item .icon {
+    height: 100px;
+    width: 100px;
+  }
+  #contact .contact-item .icon img {
+    object-fit: contain;
+  }
+  #contact .contact-item .contact-info {
+    width: 100%;
+    text-align: left;
+    padding-left: 20px;
+  }
+  /* End Contact */
 }
 /* Media Query For Tablet */
