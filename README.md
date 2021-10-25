@@ -1,3 +1,3 @@
 # websiteresponsive
 
-Project using HTML and CSS to create an one page website.
+Project using HTML, CSS and JavaScript to create an one page website.
