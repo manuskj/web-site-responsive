@@ -1,2 +1,2 @@
 # websiteresponsive
- one page website responsive using html5 and css3
+Project using HTML and CSS to create an one page website.
