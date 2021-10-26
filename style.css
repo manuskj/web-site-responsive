@@ -7,6 +7,7 @@
 html {
   font-size: 10px;
   font-family: 'Montserrat', sans-serif;
+  scroll-behavior: smooth;
 }
 a {
   text-decoration: none;
@@ -68,7 +69,7 @@ p {
 .brand h1 span {
   color: crimson;
 }
-/* Header Section */
+/* Header section */
 #header {
   position: fixed;
   z-index: 1000;
@@ -79,7 +80,8 @@ p {
 }
 #header .header {
   min-height: 8vh;
-  background-color: rgba(31, 30, 30, 0, 0.24);
+  background-color: rgba(31, 30, 30, 0.24);
+  transition: 0.3s ease background-color;
 }
 #header .nav-bar {
   display: flex;
@@ -104,7 +106,7 @@ p {
   align-items: center;
   z-index: 1;
   overflow-x: hidden;
-  transition: 5s ease left;
+  transition: 0.5s ease left;
 }
 #header .nav-list ul.active {
   left: 0%;
@@ -138,7 +140,7 @@ p {
 #header .nav-list ul li:hover a {
   color: crimson;
 }
-#header hamburger {
+#header .hamburger {
   height: 60px;
   width: 60px;
   display: inline-block;
@@ -160,6 +162,7 @@ p {
   width: 100%;
   border-radius: 50%;
   border: 3px solid white;
+  animation: hamburger_puls 1s ease infinite;
 }
 #header .hamburger .bar {
   height: 2px;
@@ -191,7 +194,7 @@ p {
 #header .hamburger.active .bar::after {
   top: 0;
 }
-/* End Header Section */
+/* End Header section */
 
 /* Hero Section */
 #hero {
@@ -446,9 +449,11 @@ p {
   flex-direction: column;
   max-width: 1200px;
   margin: 0 auto;
+  width: 90%;
 }
 #contact .contact-items {
-  width: 400px;
+  /* max-width: 400px */
+  width: 100%;
 }
 #contact .contact-item {
   width: 80%;
@@ -677,6 +682,9 @@ p {
   }
   #header .nav-list ul li {
     display: inline-block;
+  }
+  #header .nav-list ul li a {
+    font-size: 1.8rem;
   }
   #header .nav-list ul a:after {
     display: none;
